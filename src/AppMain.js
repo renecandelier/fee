@@ -46,7 +46,7 @@ const cartUpdatedHandler = cart.subscribe(Cart.Action.UPDATE, function (payload)
             price: parseFloat(subtotal) * FEE_PERCENT,
             quantity: 1,
             title: FEE_LINE_ITEM_TITLE,
-            taxable: false
+            taxable: true
         }
     });
 
